@@ -5,7 +5,7 @@ import './styles/Pagewrap.css';
 
 export default function Pagewrap() {
     return (
-      <div className="page-wrap" style={{ backgroundImage: `url(${backgroundIMG})` }}>
+      <div className="page-wrap" style={{ backgroundImage: `url(${backgroundIMG})`}} >
         <Calculator />
       </div>
   
