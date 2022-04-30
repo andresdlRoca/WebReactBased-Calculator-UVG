@@ -1,0 +1,69 @@
+.CalculatorBody {
+  position: relative;
+  width: 400px;
+  height: 550px;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 10%;
+  margin: 0 auto;
+  background-color: #2b1165;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b1165), color-stop(37%, #1a3a82), color-stop(69%, #ab24b1), to(#f54171));
+  background: linear-gradient(180deg, #2b1165 0%, #1a3a82 37%, #ab24b1 69%, #f54171 100%);
+  overflow: hidden;
+  border: 5px solid rgba(22, 182, 212, 0.3);
+  -webkit-animation: flicker 8s;
+          animation: flicker 8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.overlayAesthethic {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-size: 5px 5px, 5px 5px;
+  background-position: -1px -1px, -1px -1px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  mix-blend-mode: difference;
+}
+
+@-webkit-keyframes flicker {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #1f0e28;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 3px solid rgba(242, 0, 255, 0.3);
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 100% {
+    border: 3px solid #f200ff;
+    color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae, 0 0 20px #f205ae, 0 0 40px #f205ae, 0 0 80px #f205ae, 0 0 160px #f205ae, 0 0 320px #f205ae, 0 0 640px #f205ae;
+    -webkit-box-shadow: inset 0 0 10px rgba(242, 0, 255, 0.5), inset 0 0 20px rgba(242, 0, 255, 0.5), 0 0 10px rgba(242, 0, 255, 0.3), 0 0 20px rgba(242, 0, 255, 0.3), 0 0 40px rgba(242, 0, 255, 0.3), 0 0 80px rgba(242, 0, 255, 0.3), 0 0 160px rgba(242, 0, 255, 0.3), 0 0 320px rgba(242, 0, 255, 0.3);
+            box-shadow: inset 0 0 10px rgba(242, 0, 255, 0.5), inset 0 0 20px rgba(242, 0, 255, 0.5), 0 0 10px rgba(242, 0, 255, 0.3), 0 0 20px rgba(242, 0, 255, 0.3), 0 0 40px rgba(242, 0, 255, 0.3), 0 0 80px rgba(242, 0, 255, 0.3), 0 0 160px rgba(242, 0, 255, 0.3), 0 0 320px rgba(242, 0, 255, 0.3);
+  }
+}
+
+@keyframes flicker {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #1f0e28;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 3px solid rgba(242, 0, 255, 0.3);
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 100% {
+    border: 3px solid #f200ff;
+    color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae, 0 0 20px #f205ae, 0 0 40px #f205ae, 0 0 80px #f205ae, 0 0 160px #f205ae, 0 0 320px #f205ae, 0 0 640px #f205ae;
+    -webkit-box-shadow: inset 0 0 10px rgba(242, 0, 255, 0.5), inset 0 0 20px rgba(242, 0, 255, 0.5), 0 0 10px rgba(242, 0, 255, 0.3), 0 0 20px rgba(242, 0, 255, 0.3), 0 0 40px rgba(242, 0, 255, 0.3), 0 0 80px rgba(242, 0, 255, 0.3), 0 0 160px rgba(242, 0, 255, 0.3), 0 0 320px rgba(242, 0, 255, 0.3);
+            box-shadow: inset 0 0 10px rgba(242, 0, 255, 0.5), inset 0 0 20px rgba(242, 0, 255, 0.5), 0 0 10px rgba(242, 0, 255, 0.3), 0 0 20px rgba(242, 0, 255, 0.3), 0 0 40px rgba(242, 0, 255, 0.3), 0 0 80px rgba(242, 0, 255, 0.3), 0 0 160px rgba(242, 0, 255, 0.3), 0 0 320px rgba(242, 0, 255, 0.3);
+  }
+}
+/*# sourceMappingURL=Calculator.css.map */

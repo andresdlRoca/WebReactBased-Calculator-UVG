@@ -1,0 +1,79 @@
+$bg-color: #2b1165;
+$fg-color: #f54171;
+
+$bg-gradient: linear-gradient(
+ 180deg,
+ $bg-color 0%,
+ rgba(26, 58, 130, 1) 37%,
+ rgba(171, 36, 177, 1) 69%,
+ $fg-color 100%
+);
+$fg-gradient: linear-gradient(
+ 0deg,
+ $bg-color 0%,
+ rgba(26, 58, 130, 1) 37%,
+ rgba(171, 36, 177, 1) 69%,
+ $fg-color 100%
+);
+
+.CalculatorBody {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    display: block;
+    align-items: center;
+    top: 10%;
+    margin: 0 auto;
+    background-color: $bg-color;
+    background: $bg-gradient;
+    overflow: hidden;
+    border: 5px solid rgba(22, 182, 212, 0.3);
+    animation: flicker 8s;
+    animation-fill-mode: forwards;
+}
+
+.overlayAesthethic {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: 5px 5px, 5px 5px;
+    background-position:  -1px -1px, -1px -1px;
+    background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+    mix-blend-mode: difference;
+}
+
+//Codigo de animación tomado de: https://codepen.io/knexx/pen/jOybzaQ (Autor: knexx)
+@keyframes flicker {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+      color: #1f0e28;
+      text-shadow: none;
+      box-shadow: none;
+      border: 3px solid rgba(242, 0, 255, 0.3);
+    }
+    
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 100% {
+      border: 3px solid rgba(242, 0, 255, 1);
+      color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae,
+                 0 0 20px #f205ae,
+                 0 0 40px #f205ae,
+                 0 0 80px #f205ae,
+                 0 0 160px #f205ae,
+                 0 0 320px #f205ae,
+                 0 0 640px #f205ae;
+    box-shadow: inset 0 0 10px rgba(242, 0, 255, 0.5),
+                inset 0 0 20px rgba(242, 0, 255, 0.5),
+                0 0 10px rgba(242, 0, 255, 0.3),
+                0 0 20px rgba(242, 0, 255, 0.3),
+                0 0 40px rgba(242, 0, 255, 0.3),
+                0 0 80px rgba(242, 0, 255, 0.3),
+                0 0 160px rgba(242, 0, 255, 0.3),
+                0 0 320px rgba(242, 0, 255, 0.3)
+  }
+    }
+  
