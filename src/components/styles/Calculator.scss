@@ -32,6 +32,24 @@ $fg-gradient: linear-gradient(
     animation-fill-mode: forwards;
 }
 
+.stripe {
+    width: 100%;
+    height: 10px;
+    border-radius: 15%;
+    filter: drop-shadow(0 0 20px rgba(190, 13, 107, 0.655));
+    overflow:hidden;
+    position:absolute;
+    background-color: #2c116510;
+    animation: scanline 8s linear infinite;
+    animation-delay: 8s;
+}
+
+@keyframes scanline {
+    from {
+        transform: translateY(600px);
+    }
+}
+
 .overlayAesthethic {
     display: block;
     position: absolute;
@@ -47,7 +65,6 @@ $fg-gradient: linear-gradient(
     mix-blend-mode: difference;
 }
 
-//Codigo de animación tomado de: https://codepen.io/knexx/pen/jOybzaQ (Autor: knexx)
 @keyframes flicker {
     0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
       color: #1f0e28;

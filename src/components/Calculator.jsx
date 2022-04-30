@@ -5,6 +5,9 @@ export default function Calculator() {
     return (
       <div className="CalculatorBody">
         <div className="overlayAesthethic"></div>
+        <div className="stripe">
+            
+        </div>
       </div>
   
     );
