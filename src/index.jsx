@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Pagewrap from './components/Pagewrap';
+import React from "react"
+import ReactDOM from "react-dom"
+import Pagewrap from "./components/Pagewrap"
 
 ReactDOM.render(
-    <Pagewrap />
+	<Pagewrap />
     
-    , document.getElementById('app'));
+	, document.getElementById("app"))
