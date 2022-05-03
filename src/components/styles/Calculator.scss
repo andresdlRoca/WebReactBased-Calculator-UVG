@@ -40,6 +40,9 @@ $fg-gradient-off: linear-gradient(
  $fg-color 100%
 );
 
+.mod {
+    grid-area: mod;
+}
 
 .Clear {
     grid-area: Clear;
@@ -126,6 +129,7 @@ $fg-gradient-off: linear-gradient(
         vertical-align: middle;
         line-height: normal;
         font-size: 30px;
+        font-family: "VCR OSD Mono";
     }
     transition: 0.18s;
     //pointer-events: all;
@@ -216,7 +220,7 @@ $fg-gradient-off: linear-gradient(
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
-            "Clear Clear plusSlashminus divide"
+            "Clear mod plusSlashminus divide"
             "seven eight nine multiplication"
             "four five six substraction"
             "one two three sum"
@@ -260,12 +264,12 @@ $fg-gradient-off: linear-gradient(
     z-index: 3;
     pointer-events: none;
 }
-/*
+
 @keyframes scanline {
     from {
         transform: translateY(600px);
     }
-}*/
+}
 
 .overlayAesthethic {
     display: block;
@@ -296,7 +300,7 @@ $fg-gradient-off: linear-gradient(
     }
 }
 
-/*
+
 @keyframes flicker {
     0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
       color: #1f0e28;
@@ -326,5 +330,4 @@ $fg-gradient-off: linear-gradient(
                 0 0 160px rgba(242, 0, 255, 0.3),
                 0 0 320px rgba(242, 0, 255, 0.3)
     }
-}*/
-
+}
