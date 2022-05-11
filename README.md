@@ -3,5 +3,5 @@ Por Andrés de la Roca - 20332
 ## Ejecución de aplicacion react
 En terminal:
 ```
-npm start
+npm run start
 ```
