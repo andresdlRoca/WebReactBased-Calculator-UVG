@@ -1,6 +1,6 @@
 # WebReactBased-Calculator-UVG  
-Por Andrés de la Roca
-## Ejecución de aplicacion react
+By Andrés de la Roca
+## Execute React application
 In command line:
 ```
 npm run start
