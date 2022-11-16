@@ -1,5 +1,5 @@
 # WebReactBased-Calculator-UVG  
-
+Calculator based on React, created to practice Webpack, Babel, and React.
 ## Prerequisites
 - npm
 - node 
