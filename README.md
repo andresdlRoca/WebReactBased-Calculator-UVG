@@ -1,7 +1,7 @@
-# Lab10-Calculadora-STW-UVG  
-Por Andrés de la Roca - 20332  
+# WebReactBased-Calculator-UVG  
+Por Andrés de la Roca
 ## Ejecución de aplicacion react
-En terminal:
+In command line:
 ```
 npm run start
 ```
